@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+li .contact-info {
+  display: flex;
+  align-items: center;
+}
+
+li .contact-info span {
+  margin-right: 10px;
+}
+
+li .button-container {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+
+li .button-container button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+li .button-container button:hover {
+  background-color: #d32f2f;
+}
+
+.edit-form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-form input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.edit-form button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-form button.cancel {
+  background-color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .form input,
+  .form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  li {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  li .button-container {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  li .button-container button {
+    width: 100%;
+  }
+
+  .edit-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .edit-form button {
+    width: auto;
+  }
+}
